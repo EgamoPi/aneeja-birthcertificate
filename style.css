@@ -1,0 +1,236 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* main styling */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  background-image: url(./assets/background.svg);
+  width: 420px;
+  height: 595px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: space-between;
+  border: 2px solid red;
+  z-index: -999;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 321px;
+  height: 64px;
+}
+
+.name {
+  text-decoration: underline;
+}
+.birth-certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.birth {
+  font-family: "Clicker Script";
+  font-size: 46px;
+  color: #218248;
+}
+
+.certificate {
+  color: #376d4d;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.certify {
+  font-size: 14px;
+}
+hr {
+  border-style: dotted;
+  color: #218248;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 14px;
+  flex-wrap: nowrap;
+}
+
+/* all input fields */
+input {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  outline: none;
+  border-bottom: 1px solid #257445;
+  border-style: dotted;
+}
+
+.center input {
+  width: 100px;
+}
+
+.center form {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+label {
+  color: #218248;
+  white-space: nowrap;
+}
+
+.signature-and-date {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 40px; */
+}
+.signature-and-date input {
+  width: 100px;
+}
+
+.bottle {
+  width: 80px;
+  height: 80px;
+}
