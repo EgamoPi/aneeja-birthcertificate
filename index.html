@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap"
       rel="stylesheet"
@@ -19,26 +18,25 @@
     <title>Aneeja Hospital Birth Cert</title>
   </head>
   <body>
-    <div class="container">
-      <div id="top">
+    <main class="container">
+      <!-- topmost section ( logo - 'this is to certify that') -->
+      <div id="top-section">
         <img
           src="./assets/logo_and_name.svg"
           alt="aneeja hospital logo"
           class="logo"
         />
 
-        <div class="birth-certificate">
-          <span class="birth">Birth</span>
-          <span class="certificate">CERTIFICATE</span>
-          <span class="certify">THIS IS TO CERTIFY THAT</span>
-        </div>
+        <span class="birth">Birth</span>
+        <span class="certificate">CERTIFICATE</span>
+        <span class="certify">THIS IS TO CERTIFY THAT</span>
       </div>
 
+      <!-- dotted line -->
       <hr />
 
-      <div class="center">
-        <hr />
-        <!-- form section -->
+      <!-- center-section -->
+      <div id="center-section">
         <form class="first">
           <label>Date of Birth:</label>
           <input type="text" />
@@ -75,7 +73,8 @@
         </form>
       </div>
 
-      <form class="signature-and-date">
+      <!-- lower-section -->
+      <form id="lower-section">
         <label>Signature:</label>
         <input type="text" />
 

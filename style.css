@@ -1,4 +1,9 @@
-/* css reset */
+/* variables */
+:root {
+  --green-color: #218248;
+}
+
+/* GLOBAL CSS RESET */
 html,
 body,
 div,
@@ -123,8 +128,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* END OF GLOBAL CSS RESET */
 
-/* main styling */
 
 body {
   display: flex;
@@ -134,103 +139,99 @@ body {
 }
 
 .container {
-  background-image: url(./assets/background.svg);
+  background: url(./assets/background.svg);
   width: 420px;
   height: 595px;
   display: flex;
   flex-direction: column;
   padding: 16px;
   justify-content: space-between;
-  border: 2px solid red;
-  z-index: -999;
 }
 
-#top {
+/* TOP SECTION STYLING */
+#top-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  color: var(--green-color);
 }
 
 .logo {
-  width: 321px;
+  /* width: 321px; */
   height: 64px;
 }
 
-.name {
-  text-decoration: underline;
-}
-.birth-certificate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
 .birth {
   font-family: "Clicker Script";
   font-size: 46px;
-  color: #218248;
 }
 
 .certificate {
-  color: #376d4d;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 30px;
 }
-
 .certify {
-  font-size: 14px;
+  font-size: 12px;
+  color: #000;
 }
+
+/* END OF TOP SECTION STYLING */
+
 hr {
   border-style: dotted;
-  color: #218248;
+  color: var(--green-color);
+  width: 100%;
 }
-
-.center {
+/* CENTER SECTION STYLING */
+#center-section {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-size: 14px;
-  flex-wrap: nowrap;
 }
 
-/* all input fields */
+/* all labels and input fields */
+label {
+  color: var(--green-color);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
 input {
   background: transparent;
   border: 0;
-  margin: 0;
   outline: none;
-  border-bottom: 1px solid #257445;
+  border-bottom: 1px solid var(--green-color);
   border-style: dotted;
 }
-
-.center input {
+input {
   width: 100px;
 }
 
-.center form {
+/* forms in the center section to be horizontally aligned */
+#center-section form {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  /* justify-content: space-between; */
+  color: var(--green-color);
 }
 
-label {
-  color: #218248;
-  white-space: nowrap;
-}
+/* END OF CENTER SECTION STYLING */
 
-.signature-and-date {
+
+/* LOWER SECTION STYLING */
+#lower-section {
   font-size: 14px;
   display: flex;
   align-items: center;
-  /* margin-bottom: 40px; */
-}
-.signature-and-date input {
-  width: 100px;
+  border: 2px solid red;
+
 }
 
 .bottle {
   width: 80px;
   height: 80px;
 }
+
+/* END OF LOWER SECTION STYLING */
+
