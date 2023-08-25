@@ -130,7 +130,6 @@ table {
 }
 /* END OF GLOBAL CSS RESET */
 
-
 body {
   display: flex;
   align-items: center;
@@ -176,11 +175,26 @@ body {
   color: #000;
 }
 
+/* images */
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+.child-image,
+.footprint {
+  border: 1px dotted black;
+  border-radius: 5px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* END OF TOP SECTION STYLING */
 
 hr {
-  border-style: dotted;
-  color: var(--green-color);
+  border: 1px dotted var(--green-color);
   width: 100%;
 }
 /* CENTER SECTION STYLING */
@@ -218,14 +232,12 @@ input {
 
 /* END OF CENTER SECTION STYLING */
 
-
 /* LOWER SECTION STYLING */
 #lower-section {
   font-size: 14px;
   display: flex;
   align-items: center;
-  border: 2px solid red;
-
+  /* border: 2px solid red; */
 }
 
 .bottle {
@@ -234,4 +246,3 @@ input {
 }
 
 /* END OF LOWER SECTION STYLING */
-
